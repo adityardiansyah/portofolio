@@ -1,6 +1,12 @@
 import logoBTX from '../assets/logo_bhs.png'
 import logoBMS from '../assets/logobm.png'
 import logoTailwind from '../assets/tailwind.png'
+import onlinemol from '../assets/projects/onlinemol.png'
+import bukalapak from '../assets/projects/bukalapak.png'
+import booko from '../assets/projects/booko.png'
+import tamia from '../assets/projects/tamia.png'
+import webUnivPancasila from '../assets/projects/univpancasila.png'
+
 
 const workExperience = [
     {
@@ -68,4 +74,47 @@ const workExperience = [
     },
 ]
 
-export { workExperience }
+const projects = [
+    {
+        name: "Onlinemol",
+        image: onlinemol,
+        url_github: "https://github.com/adityardiansyah/onlinemol-tokped",
+        url_demo: "https://onlinemol-tokped.vercel.app/",
+        category: "slicing",
+        stack: ["HTML","CSS",'Javascript','Jquery']
+    },
+    {
+        name: "Bukalapak",
+        image: bukalapak,
+        url_github: "https://github.com/adityardiansyah/bukalapak",
+        url_demo: "https://bukalapak-landing.vercel.app/",
+        category: "slicing",
+        stack: ["HTML","CSS",'Javascript','Jquery']
+    },
+    {
+        name: "Website Univ. Pancasila",
+        image: webUnivPancasila,
+        url_github: "https://github.com/adityardiansyah/web-univ-pancasila",
+        url_demo: "https://web-univ-pancasila.vercel.app/",
+        category: "slicing",
+        stack: ["HTML","CSS",'Javascript','Jquery']
+    },
+    {
+        name: "Tamia",
+        image: tamia,
+        url_github: "https://github.com/adityardiansyah/tamia",
+        url_demo: "https://tabel-kimia-tamia.vercel.app/",
+        category: "slicing",
+        stack: ["HTML","CSS",'Javascript','Jquery']
+    },
+    {
+        name: "Booko",
+        image: booko,
+        url_github: "https://github.com/adityardiansyah/booko",
+        url_demo: "https://booko-nu.vercel.app/",
+        category: "slicing",
+        stack: ["HTML","CSS",'Javascript','Jquery']
+    },
+]
+
+export { workExperience, projects }
