@@ -8,8 +8,8 @@ import { workExperience } from "../constants";
 
 const Work = () => {
   return (
-    <div name="work" className="w-full h-auto text-gray-300 bg-[#0a192f]">
-      <div className="w-10/12 mx-auto p-4 flex flex-col justify-center text-center">
+    <div name="work" className="w-full h-auto text-gray-300 bg-[#0a192f] py-8">
+      <div className="w-full sm:w-10/12 mx-auto p-4 flex flex-col justify-center text-center">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-green-600">
             Work Experience
@@ -38,17 +38,17 @@ const Work = () => {
                   </div>
                 }
               >
-                <h3 className="text-white text-[24px] font-bold">
+                <h3 className="text-white text-[20px] sm:text-[24px] font-bold">
                   {experience.jobtitle}
                 </h3>
-                <h4 className="text-secondary text-[16px] font-semibold">
+                <h4 className="text-secondary text-[12px] sm:text-[16px] font-semibold">
                   {experience.company}
                 </h4>
                 <ul className="mt-5 list-disc ml-5 space-y-2">
                   {experience.description.map((desc, index) => (
                     <li
                       key={index}
-                      className="text-white-100 text-[14px] pl-1 tracking-wider"
+                      className="text-white-100 text-[12px] sm:text-[14px] pl-1 tracking-wider"
                     >
                       {desc.text}
                     </li>
