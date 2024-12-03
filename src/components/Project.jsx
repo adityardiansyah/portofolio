@@ -4,7 +4,7 @@ import { projects } from "../constants";
 const Work = () => {
   return (
     <div
-      name="work"
+      name="project"
       className="w-full md:h-auto text-gray-300 bg-[#0a192f] md:pt-24"
     >
       <div className="w-full sm:w-10/12 mx-auto p-4 flex flex-col justify-center h-full">
