@@ -3,6 +3,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
+import { linkCv, linkGit, linkLinkedin, linkEmail } from "../constants";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -47,10 +48,17 @@ const Navbar = () => {
                 </span>
               </Link>
             </li>
+            <li className="text-white hover:text-green-400">
+              <Link to="project" smooth={true} duration={500}>
+                <span className="hover:border-green-400 hover:border-b-2 py-1">
+                  Project
+                </span>
+              </Link>
+            </li>
           </ul>
           <div>
             <a
-              href=""
+              href={linkEmail}
               className=" bg-green-400 px-4 py-2 rounded-full border-1 border-green-300"
             >
               Hire Me
@@ -103,7 +111,7 @@ const Navbar = () => {
           <ul>
             <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
               <a
-                href="/"
+                href={linkLinkedin}
                 className="flex justify-between items-center w-full text-gray-300"
               >
                 LinkedIn <FaLinkedin size={30} />
@@ -111,7 +119,7 @@ const Navbar = () => {
             </li>
             <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
               <a
-                href="/"
+                href={linkGit}
                 className="flex justify-between items-center w-full text-gray-300"
               >
                 Github <FaGithub size={30} />
@@ -119,7 +127,7 @@ const Navbar = () => {
             </li>
             <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
               <a
-                href="/"
+                href={linkEmail}
                 className="flex justify-between items-center w-full text-gray-300"
               >
                 Email <HiOutlineMail size={30} />
@@ -127,7 +135,7 @@ const Navbar = () => {
             </li>
             <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
               <a
-                href="/"
+                href={linkCv}
                 className="flex justify-between items-center w-full text-gray-300"
               >
                 Resume <BsFillPersonLinesFill size={30} />
