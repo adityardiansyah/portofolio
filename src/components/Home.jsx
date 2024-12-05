@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { HiOutlineDownload, HiCheckCircle } from "react-icons/hi";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
@@ -9,11 +9,22 @@ import {
   linkLinkedin,
   linkEmail,
   linkInstagram,
+  numberPortofolio,
 } from "../constants";
+import { useSpring, animated } from "react-spring";
 
+const Number = ({ n }) => {
+  const { number } = useSpring({
+    from: { number: 0 },
+    number: n,
+    delay: 200,
+    config: { mass: 1, tension: 20, friction: 10 },
+  });
+  return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
+};
 const Home = () => {
   return (
-    <div name="home" className="w-full h-auto bg-[#0a192f]">
+    <div name="home" className="section w-full h-auto bg-[#0a192f]">
       {/* Container */}
       <div className="w-full sm:w-10/12 mx-auto px-8 flex flex-col justify-center h-full">
         <div className="grid grid-cols-1 items-start lg:grid-cols-3 lg:gap-12 gap-y-8 mt-32 md:mt-48">
@@ -86,42 +97,25 @@ const Home = () => {
             </div>
           </div>
           <div className="order-2 lg:order-2">
-            <img src={Slide} alt="" className="hidden md:flex" />
+            <img
+              src={Slide}
+              alt=""
+              id="icon-slide"
+              className="hidden md:flex"
+            />
           </div>
         </div>
 
         {/* Counter */}
         <div className="w-full grid lg:grid-cols-4 grid-cols-2 gap-2 lg:gap-4 my-10 sm:mt-10 ">
-          <div className="flex items-center align-center">
-            <p className="text-6xl font-bold text-white">7</p>
-            <p className="text-white pl-3 text-sm">
-              Years of <br /> experience
-            </p>
-          </div>
-          <div className="flex items-center align-center">
-            <p className="text-6xl font-bold text-white">50</p>
-            <p className="text-white pl-3 text-sm">
-              <p>
-                Projects <br /> completed
-              </p>
-            </p>
-          </div>
-          <div className="flex items-center align-center">
-            <p className="text-6xl font-bold text-white">7</p>
-            <p className="text-white pl-3 text-sm">
-              <p>
-                Technologies <br /> expertise
-              </p>
-            </p>
-          </div>
-          <div className="flex items-center align-center">
-            <p className="text-6xl font-bold text-white">10</p>
-            <p className="text-white pl-3 text-sm">
-              <p>
-                Client <br /> satisfaction
-              </p>
-            </p>
-          </div>
+          {numberPortofolio.map((portfolio) => (
+            <div className="flex items-center align-center justify-center">
+              <div className="text-6xl font-bold text-white flex">
+                <Number n={portfolio.number} /> +
+              </div>
+              <p className="text-white pl-3 text-[15pt]">{portfolio.title}</p>
+            </div>
+          ))}
         </div>
       </div>
     </div>

@@ -122,4 +122,27 @@ const projects = [
     },
 ]
 
-export { workExperience, projects, linkCv, linkGit, linkLinkedin, linkEmail, linkInstagram }
+const numberPortofolio = [
+    {
+        id: 1,
+        title: "Years of experience",
+        number: 7
+    },
+    {
+        id: 2,
+        title: "Projects completed",
+        number: 50
+    },
+    {
+        id: 3,
+        title: "Technologies expertise",
+        number: 7
+    },
+    {
+        id: 4,
+        title: "Client satisfaction",
+        number: 5
+    }, 
+];
+
+export { workExperience, projects, linkCv, linkGit, linkLinkedin, linkEmail, linkInstagram, numberPortofolio }
