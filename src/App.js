@@ -5,6 +5,7 @@ import Skills from './components/Skills';
 import Work from './components/Work';
 import Project from './components/Project';
 import Footer from './components/Footer';
+import { animate, scroll } from "motion";
 
 function App() {
   return (
