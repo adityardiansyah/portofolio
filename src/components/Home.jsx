@@ -110,10 +110,12 @@ const Home = () => {
         <div className="w-full grid lg:grid-cols-4 grid-cols-2 gap-2 lg:gap-4 my-10 sm:mt-10 ">
           {numberPortofolio.map((portfolio) => (
             <div className="flex items-center align-center justify-center">
-              <div className="text-6xl font-bold text-white flex">
+              <div className="text-4xl md:text-6xl font-bold text-white flex">
                 <Number n={portfolio.number} /> +
               </div>
-              <p className="text-white pl-3 text-[15pt]">{portfolio.title}</p>
+              <p className="text-white pl-3 text-[12pt] md:text-[15pt]">
+                {portfolio.title}
+              </p>
             </div>
           ))}
         </div>
