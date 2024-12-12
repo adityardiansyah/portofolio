@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="mt-6 mx-auto">
             <a
               href={linkEmail}
-              className="py-3 px-16 md:py-4 md:px-8 text-[12pt] md:text-[16pt] bg-green-500 rounded-full text-white hover:bg-green-600 border-dotted border-white border-2"
+              className="py-3 px-16 md:py-4 md:px-16 text-[12pt] md:text-[14pt] bg-green-500 rounded-full text-white hover:bg-green-600 border-dotted border-white border-2"
             >
               Send Message
             </a>
@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-10/12 mx-auto flex justify-between mt-5 pt-6 p-5 text-[10pt] md:text-[12pt]">
+      <div className="w-full md:w-10/12 mx-auto flex justify-between mt-10 md:mt-28 pt-6 p-5 text-[10pt] md:text-[12pt]">
         <p>Copyright ©2024 All rights reserved</p>
         <div className="flex items-center text-right">
           <span>
