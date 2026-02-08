@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { HiOutlineDownload, HiCheckCircle } from "react-icons/hi";
 import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";

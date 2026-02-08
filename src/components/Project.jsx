@@ -36,12 +36,12 @@ const Work = () => {
                   ))}
                 </div>
                 <div className="pt-8 text-center">
-                  <a href={project.url_demo} target="_blank">
+                  <a href={project.url_demo} target="_blank" rel="noreferrer">
                     <button className="text-center rounded-lg px-3 sm:px-4 py-2 sm:py-3 m-2 bg-white text-gray-700 font-bold text-sm sm:text-lg">
                       Demo
                     </button>
                   </a>
-                  <a href={project.url_github} target="_blank">
+                  <a href={project.url_github} target="_blank" rel="noreferrer">
                     <button className="text-center rounded-lg px-3 sm:px-4 py-2 sm:py-3 m-2 bg-white text-gray-700 font-bold text-sm sm:text-lg">
                       Code
                     </button>
